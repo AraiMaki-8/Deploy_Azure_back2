@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
-import os　#追加
+import os #追加
 
 app = Flask(__name__)
 # CORS設定を更新
@@ -39,7 +39,7 @@ def echo():
     return jsonify({"message": f"echo: {message}"})
 
 if __name__ == '__main__':
-    # 環境変数PORT を取得（デフォルトは8000）
+    # 環境変数PORTを取得（デフォルトは8000）
     port = int(os.environ.get('PORT', 8080))
     # デバッグモードをローカル環境では有効に、本番では無効に
     app.run(host='0.0.0.0', port=port, debug=False)
