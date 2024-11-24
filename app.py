@@ -11,7 +11,7 @@ CORS(app, resources={
             "http://localhost:3000" # ローカル開発⽤
         ]
     }
-}) # CORS設定を更新
+})
 
 @app.route('/', methods=['GET'])
 def hello():
