@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
-import os
+import os　#追加
 
 app = Flask(__name__)
 # CORS設定を更新
